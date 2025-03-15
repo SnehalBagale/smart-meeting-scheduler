@@ -3,8 +3,8 @@ import calendar
 
 class SmartMeetingScheduler:
     def __init__(self):
-        self.working_hours = (9, 17)  # 9 AM to 5 PM
-        self.public_holidays = {  # Example holidays
+        self.working_hours = (9, 17) 
+        self.public_holidays = { 
             "2025-01-01", "2025-05-01", "2025-12-25"
         }
         self.schedule = {}
@@ -62,7 +62,7 @@ class SmartMeetingScheduler:
         formatted_meetings = "\n".join([f"{s.strftime('%I:%M %p')} - {e.strftime('%I:%M %p')}" for s, e in meetings])
         return f"Scheduled Meetings:\n{formatted_meetings}"
 
-# Example Usage
+
 scheduler = SmartMeetingScheduler()
 date = datetime(2025, 3, 18)
 
